@@ -70,3 +70,5 @@ systemReserved:
 {% endif %}
 {% endif %}
 resolvConf: "{{ kube_resolv_conf }}"
+allowedUnsafeSysctls:
+- net.ipv6.conf.all.disable_ipv6
